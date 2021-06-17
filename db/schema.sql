@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS ballad_db;
+
+CREATE DATABASE ballad_db;
