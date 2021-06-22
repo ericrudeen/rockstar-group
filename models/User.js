@@ -28,19 +28,42 @@ User.init(
           isEmail: true,
         },
       },
-      phone_number: {
-          type: DataTypes.INTEGER,
-          allowNull:false,
-          validate: {
-              isNumeric: true
-          }
-      },
       password: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [8],
         },
+      },
+      phone_number: {
+          type: DataTypes.BIGINT,
+          allowNull:false,
+          validate: {
+              isNumeric: true
+          }
+      },
+      age: {
+        type: DataTypes.INTEGER,
+        allowNull:false,
+        validate: {
+            isNumeric: true
+        }
+      },
+      gender: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      interested_in: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      location: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      bio: {
+        type: DataTypes.STRING,
+        allowNull: false,
       },
     },
     {
@@ -58,7 +81,7 @@ User.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'user',
+        modelName: 'User',
       }
     );
     
