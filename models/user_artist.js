@@ -2,15 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
-class Match extends Model {}
+class User_Artist extends Model {}
 
-// enum match_status {
-//   pending
-//   accepted
-//   declined
-// }
-
-Match.init(
+User_Artist.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -18,25 +12,21 @@ Match.init(
         primaryKey: true,
         autoIncrement: true,
       },
-      has_been_matched: {
-        type: DataTypes.BOOLEAN,
-        allowNull: false,
-      },
-      liker: {
+      user_id: {
         type: DataTypes.INTEGER,
         allowNull:false,
         references: {
-            model: 'User',
-            key: 'id',
-          },
+          model: 'User',
+          key: 'id',
+        },
       },
-      likee: {
+      artist_id: {
         type: DataTypes.INTEGER,
         allowNull:false,
         references: {
-            model: 'User',
-            key: 'id',
-          },
+          model: 'Artist',
+          key: 'id',
+        },
       },
     },
     {
@@ -44,8 +34,8 @@ Match.init(
       timestamps: false,
       freezeTableName: true,
       underscored: true,
-      modelName: 'Match',
+      modelName: 'User_Artist',
     }
 );
 
-module.exports = Match;
+module.exports = User_Artist;
