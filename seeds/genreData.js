@@ -32,7 +32,7 @@ const genredata = [
     name: 'Punk',
   },
   {
-    name: 'Alterative',
+    name: 'Alternative',
   },
   {
     name: 'Disney',

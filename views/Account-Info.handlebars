@@ -10,21 +10,252 @@
 
 <header>
     <h1>BALLAD</h1>
+    <h2>Create account</h2>
 </header>
 <div class="list-group">
         <label for="name">Full Name:</label>
         <input class="form-input" placeholder="Full Name" type="text" id="age" />
         <label for="age">Age:</label>
         <input class="form-input" placeholder="Age" type="text" id="age" />
-        <label for="gender">Gender:</label>
-        <input class="form-input" placeholder="Gender" type="text" id="gender" />
-        <label for="interested-in">Interested in:</label>
-        <input class="form-input" placeholder="Interested In" type="text" id="interested-in" />
         <label for="location">Location:</label>
         <input class="form-input" placeholder="Location" type="text" id="location" />
+        <label for="gender">Gender:</label>
+        <input class="form-input" placeholder="Gender" type="text" id="gender" />
+        {{!-- <label for="interested-in">Interested in:</label> --}}
+
+      {{!-- <div class="input-group mb-3">
+        <label class="input-group-text" for="interested-in">Interested In:</label>
+          <select class="form-select" id="gender-selected">
+            <option selected>Choose...</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">All</option>
+          </select>
+      </div> --}}
+
+      {{!-- <div class="input-group mb-3">
+        <div class="input-group-text">
+         <input class="form-check-input mt-0" type="checkbox" value="song 1" aria-label="Checkbox for following text input">
+        </div>
+         <input type="text" class="form-control" aria-label="Text input with checkbox">
+      </div>  
         <label for="genres">Favorite Genre:</label>
         <input class="form-input" placeholder="Favorite Genre" type="text" id="genres" />
         <label for="artists">Favorite Artist:</label>
         <input class="form-input" placeholder="Favorite Artist" type="text" id="artists" />
+</div> --}}
+
+<form>    
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Interested In:</legend>
+    <div class="col-sm-10">
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+        <label class="form-check-label" for="gridRadios1">
+          Male
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+        <label class="form-check-label" for="gridRadios2">
+          Female
+        </label>
+      </div>
+      <div class="form-check disabled">
+        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+        <label class="form-check-label" for="gridRadios3">
+          All genders
+        </label>
+      </div>
+    </div>
+  </fieldset>
+
+{{!-- Option 1 for Dropdown --}}
+  <fieldset class="row mb-3">
+    <legend class="col-form-label col-sm-2 pt-0">Favorite Genres</legend>
+  <div class="row mb-3">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck1">
+        <label class="form-check-label" for="gridCheck1">Pop</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck2">Rock</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck3">Hip Hop</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck4">R&B</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck5">Country</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck6">Jazz</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck7">EDM</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck8">Reggae</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck9">Metal</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck10">Punk</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck11">Alternative</label>
+        <input class="form-check-input" type="checkbox" id="gridCheck2">
+        <label class="form-check-label" for="gridCheck12">Disney</label>
+      </div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+{{!-- Option 2 for Dropdown --}}
+<div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropdown
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+      <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+    </ul>
+  </div>
+
+  {{!-- Option 3 Dropdown --}}
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="artistdropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+    Artist Dropdown
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="artistdropdownMenu">
+    <li><button class="dropdown-item" type="button">Taylor Swift</button></li>
+    <li><button class="dropdown-item" type="button">Michael Jackson</button></li>
+    <li><button class="dropdown-item" type="button">Drake</button></li>
+    <li><button class="dropdown-item" type="button">Nirvana</button></li>
+    <li><button class="dropdown-item" type="button">The Beatles</button></li>
+    <li><button class="dropdown-item" type="button">Queen</button></li>
+    <li><button class="dropdown-item" type="button">The Rolling Stones</button></li>
+    <li><button class="dropdown-item" type="button">Pink Floyd</button></li>
+    <li><button class="dropdown-item" type="button">Led Zeppelin</button></li>
+    <li><button class="dropdown-item" type="button">AC/DC</button></li>
+    <li><button class="dropdown-item" type="button">Van Halen</button></li>
+    <li><button class="dropdown-item" type="button">Foo Fighters</button></li>
+    <li><button class="dropdown-item" type="button">The Eagles</button></li>
+    <li><button class="dropdown-item" type="button">Lil Wayne</button></li>
+    <li><button class="dropdown-item" type="button">Eminem</button></li>
+    <li><button class="dropdown-item" type="button">2Pac</button></li>
+    <li><button class="dropdown-item" type="button">Snoop Dogg</button></li>
+    <li><button class="dropdown-item" type="button">Cardi B</button></li>
+    <li><button class="dropdown-item" type="button">Megan Thee Stallion</button></li>
+    <li><button class="dropdown-item" type="button">Jay-Z</button></li>
+    <li><button class="dropdown-item" type="button">Chance, The Rapper</button></li>
+    <li><button class="dropdown-item" type="button">Nas</button></li>
+    <li><button class="dropdown-item" type="button">Post Malone</button></li>
+    <li><button class="dropdown-item" type="button">Mac Miller</button></li>
+    <li><button class="dropdown-item" type="button">Beyonce</button></li>
+    <li><button class="dropdown-item" type="button">Lady Gaga</button></li>
+    <li><button class="dropdown-item" type="button">Ariana Grande</button></li>
+    <li><button class="dropdown-item" type="button">Doja Cat</button></li>
+    <li><button class="dropdown-item" type="button">Justin Beiber</button></li>
+    <li><button class="dropdown-item" type="button">The Weeknd</button></li>
+    <li><button class="dropdown-item" type="button">Rhianna</button></li>
+    <li><button class="dropdown-item" type="button">Bruna Mars</button></li>
+    <li><button class="dropdown-item" type="button">Billie Eilish</button></li>
+    <li><button class="dropdown-item" type="button">Madonna</button></li>
+    <li><button class="dropdown-item" type="button">Britney Spears</button></li>
+    <li><button class="dropdown-item" type="button">Adele</button></li>
+    <li><button class="dropdown-item" type="button">Bryson Tiller</button></li>
+    <li><button class="dropdown-item" type="button">Usher</button></li>
+    <li><button class="dropdown-item" type="button">Alicia Keys</button></li>
+    <li><button class="dropdown-item" type="button">Mary J. Blige</button></li>
+    <li><button class="dropdown-item" type="button">John Legend</button></li>
+    <li><button class="dropdown-item" type="button">Aretha Franklin</button></li>
+    <li><button class="dropdown-item" type="button">Giveon</button></li>
+    <li><button class="dropdown-item" type="button">Stevie Wonder</button></li>
+    <li><button class="dropdown-item" type="button">Marvin Gaye</button></li>
+    <li><button class="dropdown-item" type="button">Frank Ocean</button></li>
+    <li><button class="dropdown-item" type="button">BJ The Chicago Kid</button></li>
+    <li><button class="dropdown-item" type="button">Toby Keith'</button></li>
+    <li><button class="dropdown-item" type="button">Garth Brooks</button></li>
+    <li><button class="dropdown-item" type="button">Luke Bryan</button></li>
+    <li><button class="dropdown-item" type="button">Luke Combs</button></li>
+    <li><button class="dropdown-item" type="button">Blake Shelton</button></li>
+    <li><button class="dropdown-item" type="button">Dolly Parton</button></li>
+    <li><button class="dropdown-item" type="button">Tim McGraw</button></li>
+    <li><button class="dropdown-item" type="button">Carrie Underwood</button></li>
+    <li><button class="dropdown-item" type="button">Jason Aldean</button></li>
+    <li><button class="dropdown-item" type="button">Brad Praisley</button></li>
+    <li><button class="dropdown-item" type="button">Miles Davis</button></li>
+    <li><button class="dropdown-item" type="button">Duke Ellington</button></li>
+    <li><button class="dropdown-item" type="button">Louis Armstrong</button></li>
+    <li><button class="dropdown-item" type="button">Charlie Parker</button></li>
+    <li><button class="dropdown-item" type="button">Frank Sinatra</button></li>
+    <li><button class="dropdown-item" type="button">Ellie Fitzgerald</button></li>
+    <li><button class="dropdown-item" type="button">Nat King Cole</button></li>
+    <li><button class="dropdown-item" type="button">John Coltrane</button></li>
+    <li><button class="dropdown-item" type="button">Thelonious Monk</button></li>
+    <li><button class="dropdown-item" type="button">Dizzy Gellespie</button></li>
+    <li><button class="dropdown-item" type="button">Herbie Hancock</button></li>
+    <li><button class="dropdown-item" type="button">Skrillex</button></li>
+    <li><button class="dropdown-item" type="button">Chainsmokers</button></li>
+    <li><button class="dropdown-item" type="button">Steve Aoki</button></li>
+    <li><button class="dropdown-item" type="button">Diplo</button></li>
+    <li><button class="dropdown-item" type="button">Avicii</button></li>
+    <li><button class="dropdown-item" type="button">Deadmau5</button></li>
+    <li><button class="dropdown-item" type="button">Zedd</button></li>
+    <li><button class="dropdown-item" type="button">Calvin Harris</button></li>
+    <li><button class="dropdown-item" type="button">Flume</button></li>
+    <li><button class="dropdown-item" type="button">Alesso</button></li>
+    <li><button class="dropdown-item" type="button">Bob Marley</button></li>
+    <li><button class="dropdown-item" type="button">Peter Tosh</button></li>
+    <li><button class="dropdown-item" type="button">Damian Marley</button></li>
+    <li><button class="dropdown-item" type="button">Rebelution</button></li>
+    <li><button class="dropdown-item" type="button">Iration</button></li>
+    <li><button class="dropdown-item" type="button">Desmond Dekker</button></li>
+    <li><button class="dropdown-item" type="button">Jimmy Cliff</button></li>
+    <li><button class="dropdown-item" type="button">Fela Kuti</button></li>
+    <li><button class="dropdown-item" type="button">Dennis Brown</button></li>
+    <li><button class="dropdown-item" type="button">Snoop Lion</button></li>
+    <li><button class="dropdown-item" type="button">Metallica</button></li>
+    <li><button class="dropdown-item" type="button">Pantera</button></li>
+    <li><button class="dropdown-item" type="button">Black Sabbath</button></li>
+    <li><button class="dropdown-item" type="button">Iron Maiden</button></li>
+    <li><button class="dropdown-item" type="button">Judas Priest</button></li>
+    <li><button class="dropdown-item" type="button">Scorpions</button></li>
+    <li><button class="dropdown-item" type="button">Slipknot</button></li>
+    <li><button class="dropdown-item" type="button">Korn</button></li>
+    <li><button class="dropdown-item" type="button">Motley Cru</button></li>
+    <li><button class="dropdown-item" type="button">Tool</button></li>
+    <li><button class="dropdown-item" type="button">Slayer</button></li>
+    <li><button class="dropdown-item" type="button">System of a Down</button></li>
+    <li><button class="dropdown-item" type="button">Green Day</button></li>
+    <li><button class="dropdown-item" type="button">Rancid</button></li>
+    <li><button class="dropdown-item" type="button">Misfits</button></li>
+    <li><button class="dropdown-item" type="button">Blink-182</button></li>
+    <li><button class="dropdown-item" type="button">Ramones</button></li>
+    <li><button class="dropdown-item" type="button">Black Flag</button></li>
+    <li><button class="dropdown-item" type="button">Social Distortion</button></li>
+    <li><button class="dropdown-item" type="button">The Offspring</button></li>
+    <li><button class="dropdown-item" type="button">Rage Against The Machine</button></li>
+    <li><button class="dropdown-item" type="button">Iggy Pop</button></li>
+    <li><button class="dropdown-item" type="button">My Chemical Romance</button></li>
+    <li><button class="dropdown-item" type="button">Red Hot Chili Peppers</button></li>
+    <li><button class="dropdown-item" type="button">Pearl Jam</button></li>
+    <li><button class="dropdown-item" type="button">The Killers</button></li>
+    <li><button class="dropdown-item" type="button">Weezer</button></li>
+    <li><button class="dropdown-item" type="button">Coldplay'</button></li>
+    <li><button class="dropdown-item" type="button">R.E.M.</button></li>
+    <li><button class="dropdown-item" type="button">Artic Monkeys</button></li>
+    <li><button class="dropdown-item" type="button">The Smashing Pumpkins</button></li>
+    <li><button class="dropdown-item" type="button">The Cure</button></li>
+    <li><button class="dropdown-item" type="button">Imagine Dragons</button></li>
+    <li><button class="dropdown-item" type="button">Mulan</button></li>
+    <li><button class="dropdown-item" type="button">Lion King</button></li>
+    <li><button class="dropdown-item" type="button">Cinderella</button></li>
+    <li><button class="dropdown-item" type="button">The Little Mermaid</button></li>
+    <li><button class="dropdown-item" type="button">The Beauty and The Beast</button></li>
+    <li><button class="dropdown-item" type="button">Aladdin</button></li>
+    <li><button class="dropdown-item" type="button">Sleeping Beauty</button></li>
+    <li><button class="dropdown-item" type="button">Frozen</button></li>
+    <li><button class="dropdown-item" type="button">Snow White</button></li>
+    <li><button class="dropdown-item" type="button">Goofy Movie</button></li>
+
+
+  
+  </ul>
 </div>
-      
