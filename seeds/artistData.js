@@ -41,7 +41,7 @@ const artistdata = [
     name: 'The Eagles',
   },
   {
-    name: 'Lil Wanye',
+    name: 'Lil Wayne',
   },
   {
     name: 'Eminem',
@@ -51,9 +51,6 @@ const artistdata = [
   },
   {
     name: 'Snoop Dogg',
-  },
-  {
-    name: 'Eminem',
   },
   {
     name: 'Cardi B',
@@ -107,7 +104,7 @@ const artistdata = [
     name: 'Madonna',
   },
   {
-    name: 'Brittney Spears',
+    name: 'Britney Spears',
   },
   {
     name: 'Adele',
@@ -380,10 +377,10 @@ const artistdata = [
     name: 'The Little Mermaid',
   },
   {
-    name: 'The Beaty and The Beast',
+    name: 'The Beauty and The Beast',
   },
   {
-    name: 'Alladin',
+    name: 'Aladdin',
   },
   {
     name: 'Sleeping Beauty',
