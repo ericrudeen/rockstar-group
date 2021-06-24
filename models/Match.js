@@ -20,7 +20,7 @@ Match.init(
       },
       has_been_matched: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
+        defaultValue: false,
       },
       liker: {
         type: DataTypes.INTEGER,
