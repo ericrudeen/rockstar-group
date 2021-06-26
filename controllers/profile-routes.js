@@ -64,16 +64,4 @@ router.get("/Match", async (req, res) => {
   }
 });
 
-    //   req.session.save(() => {
-    //     req.session.userId = newUser.id;
-    //     // req.session.email = newUser.email;
-    //     // req.session.loggedIn = true;
-
-    //     res.json(newUser);
-    //   });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
 module.exports = router;
