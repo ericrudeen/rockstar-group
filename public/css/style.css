@@ -35,3 +35,64 @@ h1, h2 {
     border: 2px solid darkblue;
     border-radius: 5px;
   }
+
+  /*Sign In & Sign Out*/
+.card {
+  margin: 10px;
+  border: 3px solid darkblue;
+  border-radius: 5px;
+}
+.card-header {
+  color: black;
+  background-color: lightskyblue;
+  padding: 10px;
+  border-radius: 3px;
+}
+.card-body
+.form-label,
+.form-input,
+.form-textarea {
+  display: block;
+}
+.form-label {
+  font-size: 16px;
+  margin: 15px;
+}
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}
+.min-100-vh {
+  min-height: 100vh;
+}
+
+p {
+  margin: 10px;
+}
+
+button,
+form label,
+form input,
+form textarea {
+  display: block;
+}
+button,
+form label {
+  font-size: 16px;
+  margin: 15px;
+}
+
+button,
+form input,
+form textarea {
+  width: 98%;
+  padding: 10px;
+  margin: 5px;
+  font-size: 16px;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}

@@ -1,0 +1,530 @@
+{{!-- need functionality to create profile button and we need functionality to upload image --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BALLAD</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<header>
+  <h1 class="text-center">BALLAD</h1>
+  <h2 class="text-center">Create account</h2>
+</header>
+
+
+  <div class="list-group mx-auto p-4" style="width: 50rem;">
+      <label class="p-3" for="name">Full Name:</label>
+      <input class="form-input" placeholder="Full Name" type="text" id="name" />
+      <label class="p-3" for="age">Age:</label>
+      <input class="form-input" placeholder="Age" type="text" id="age" />
+      <label class="p-3" for="location">Location:</label>
+      <input class="form-input" placeholder="Location" type="text" id="location" />
+      <div class="input-group mb-3 p-3">
+        <label class="input-group-text" for="gender">Gender:</label>
+          <select class="form-select" id="gender-selected">
+            <option selected>Choose...</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">Agender</option>
+          </select>
+      </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="interested-in">Interested In:</label>
+        <select class="form-select" id="interested-in">
+          <option selected>Choose...</option>
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Both</option>
+        </select>
+    </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="genre">Favorite Genre:</label>
+        <select class="form-select" id="favorite-genre1">
+          <option selected>Choose...</option>
+          <option value="1">Pop</option>
+          <option value="2">Rock</option>
+          <option value="3">Hip Hop</option>
+          <option value="4">R&B</option>
+          <option value="5">Country</option>
+          <option value="6">Jazz</option>
+          <option value="7">EDM</option>
+          <option value="8">Reggae</option>
+          <option value="9">Metal</option>
+          <option value="10">Punk</option>
+          <option value="11">Alternative</option>
+          <option value="12">Disney</option>
+        </select>
+    </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="genre">Favorite Genre:</label>
+        <select class="form-select" id="favorite-genre2">
+          <option selected>Choose...</option>
+          <option value="1">Pop</option>
+          <option value="2">Rock</option>
+          <option value="3">Hip Hop</option>
+          <option value="4">R&B</option>
+          <option value="5">Country</option>
+          <option value="6">Jazz</option>
+          <option value="7">EDM</option>
+          <option value="8">Reggae</option>
+          <option value="9">Metal</option>
+          <option value="10">Punk</option>
+          <option value="11">Alternative</option>
+          <option value="12">Disney</option>
+        </select>
+    </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="genre">Favorite Genre:</label>
+        <select class="form-select" id="favorite-genre3">
+          <option selected>Choose...</option>
+          <option value="1">Pop</option>
+          <option value="2">Rock</option>
+          <option value="3">Hip Hop</option>
+          <option value="4">R&B</option>
+          <option value="5">Country</option>
+          <option value="6">Jazz</option>
+          <option value="7">EDM</option>
+          <option value="8">Reggae</option>
+          <option value="9">Metal</option>
+          <option value="10">Punk</option>
+          <option value="11">Alternative</option>
+          <option value="12">Disney</option>
+        </select>
+    </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="favorite-artist1">Favorite Artist:</label>
+        <select class="form-select" id="favorite-artist1">
+          <option selected>Choose...</option>
+          <option value="1">Taylor Swift</option>
+          <option value="1">Michael Jackson</option>
+          <option value="2">Drake</option>
+          <option value="3">Nirvana</option>
+          <option value="4">The Beatles</option>
+          <option value="5">Queen</option>
+          <option value="6">The Rolling Stones</option>
+          <option value="7">Pink Floyd</option>
+          <option value="8">Led Zeppelin</option>
+          <option value="9">AC/DC</option>
+          <option value="10">Van Halen</option>
+          <option value="11">Foo Fighters</option>
+          <option value="12">The Eagles</option>
+          <option value="13">Lil Wayne</option>
+          <option value="14">Eminem</option>
+          <option value="15">2Pac</option>
+          <option value="16">Snoop Dogg</option>
+          <option value="17">Cardi B</option>
+          <option value="18">Megan Thee Stallion</option>
+          <option value="19">Jay-Z</option>
+          <option value="20">Chance, The Rapper</option>
+          <option value="21">Nas</option>
+          <option value="22">Post Malone</option>
+          <option value="23">Mac Miller</option>
+          <option value="24">Beyonce</option>
+          <option value="25">Lady Gaga</option>
+          <option value="26">Ariana Grande</option>
+          <option value="27">Doja Cat</option>
+          <option value="28">Justin Beiber</option>
+          <option value="29">The Weeknd</option>
+          <option value="30">Rhianna</option>
+          <option value="31">Bruna Mars</option>
+          <option value="32">Billie Eilish</option>
+          <option value="33">Madonna</option>
+          <option value="34">Britney Spears</option>
+          <option value="35">Adele</option>
+          <option value="36">Bryson Tiller</option>
+          <option value="37">Usher</option>
+          <option value="38">Alicia Keys</option>
+          <option value="39">Mary J. Blige</option>
+          <option value="40">John Legend</option>
+          <option value="41">Aretha Franklin</option>
+          <option value="42">Giveon</option>
+          <option value="43">Stevie Wonder</option>
+          <option value="44">Marvin Gaye</option>
+          <option value="45">Frank Ocean</option>
+          <option value="46">BJ The Chicago Kid</option>
+          <option value="47">Toby Keith'</option>
+          <option value="48">Garth Brooks</option>
+          <option value="49">Luke Bryan</option>
+          <option value="50">Luke Combs</option>
+          <option value="51">Blake Shelton</option>
+          <option value="52">Dolly Parton</option>
+          <option value="53">Tim McGraw</option>
+          <option value="54">Carrie Underwood</option>
+          <option value="55">Jason Aldean</option>
+          <option value="56">Brad Praisley</option>
+          <option value="57">Miles Davis</option>
+          <option value="58">Duke Ellington</option>
+          <option value="59">Louis Armstrong</option>
+          <option value="60">Charlie Parker</option>
+          <option value="61">Frank Sinatra</option>
+          <option value="62">Ellie Fitzgerald</option>
+          <option value="63">Nat King Cole</option>
+          <option value="64">John Coltrane</option>
+          <option value="65">Thelonious Monk</option>
+          <option value="66">Dizzy Gellespie</option>
+          <option value="67">Herbie Hancock</option>
+          <option value="68">Skrillex</option>
+          <option value="69">Chainsmokers</option>
+          <option value="70">Steve Aoki</option>
+          <option value="71">Diplo</option>
+          <option value="72">Avicii</option>
+          <option value="73">Deadmau5</option>
+          <option value="74">Zedd</option>
+          <option value="75">Calvin Harris</option>
+          <option value="76">Flume</option>
+          <option value="77">Alesso</option>
+          <option value="78">Bob Marley</option>
+          <option value="79">Peter Tosh</option>
+          <option value="80">Damian Marley</option>
+          <option value="81">Rebelution</option>
+          <option value="82">Iration</option>
+          <option value="83">Desmond Dekker</option>
+          <option value="84">Jimmy Cliff</option>
+          <option value="85">Fela Kuti</option>
+          <option value="86">Dennis Brown</option>
+          <option value="87">Snoop Lion</option>
+          <option value="88">Metallica</option>
+          <option value="89">Pantera</option>
+          <option value="90">Black Sabbath</option>
+          <option value="91">Iron Maiden</option>
+          <option value="92">Judas Priest</option>
+          <option value="93">Scorpions</option>
+          <option value="94">Slipknot</option>
+          <option value="95">Korn</option>
+          <option value="96">Motley Cru</option>
+          <option value="97">Tool</option>
+          <option value="98">Slayer</option>
+          <option value="99">System of a Down</option>
+          <option value="100">Green Day</option>
+          <option value="101">Rancid</option>
+          <option value="102">Misfits</option>
+          <option value="103">Blink-182</option>
+          <option value="104">Ramones</option>
+          <option value="105">Black Flag</option>
+          <option value="106">Social Distortion</option>
+          <option value="107">The Offspring</option>
+          <option value="108">Rage Against The Machine</option>
+          <option value="109">Iggy Pop</option>
+          <option value="110">My Chemical Romance</option>
+          <option value="111">Red Hot Chili Peppers</option>
+          <option value="112">Pearl Jam</option>
+          <option value="113">The Killers</option>
+          <option value="114">Weezer</option>
+          <option value="115">Coldplay'</option>
+          <option value="116">R.E.M.</option>
+          <option value="117">Artic Monkeys</option>
+          <option value="118">The Smashing Pumpkins</option>
+          <option value="119">The Cure</option>
+          <option value="120">Imagine Dragons</option>
+          <option value="121">Mulan</option>
+          <option value="122">Lion King</option>
+          <option value="123">Cinderella</option>
+          <option value="124">The Little Mermaid</option>
+          <option value="125">The Beauty and The Beast</option>
+          <option value="126">Aladdin</option>
+          <option value="127">Sleeping Beauty</option>
+          <option value="128">Frozen</option>
+          <option value="129">Snow White</option>
+          <option value="130">Goofy Movie</option>         
+        </select>
+    </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="favorite-artist2">Favorite Artist:</label>
+        <select class="form-select" id="favorite-artist2">
+          <option selected>Choose...</option>
+          <option value="1">Taylor Swift</option>
+          <option value="1">Michael Jackson</option>
+          <option value="2">Drake</option>
+          <option value="3">Nirvana</option>
+          <option value="4">The Beatles</option>
+          <option value="5">Queen</option>
+          <option value="6">The Rolling Stones</option>
+          <option value="7">Pink Floyd</option>
+          <option value="8">Led Zeppelin</option>
+          <option value="9">AC/DC</option>
+          <option value="10">Van Halen</option>
+          <option value="11">Foo Fighters</option>
+          <option value="12">The Eagles</option>
+          <option value="13">Lil Wayne</option>
+          <option value="14">Eminem</option>
+          <option value="15">2Pac</option>
+          <option value="16">Snoop Dogg</option>
+          <option value="17">Cardi B</option>
+          <option value="18">Megan Thee Stallion</option>
+          <option value="19">Jay-Z</option>
+          <option value="20">Chance, The Rapper</option>
+          <option value="21">Nas</option>
+          <option value="22">Post Malone</option>
+          <option value="23">Mac Miller</option>
+          <option value="24">Beyonce</option>
+          <option value="25">Lady Gaga</option>
+          <option value="26">Ariana Grande</option>
+          <option value="27">Doja Cat</option>
+          <option value="28">Justin Beiber</option>
+          <option value="29">The Weeknd</option>
+          <option value="30">Rhianna</option>
+          <option value="31">Bruna Mars</option>
+          <option value="32">Billie Eilish</option>
+          <option value="33">Madonna</option>
+          <option value="34">Britney Spears</option>
+          <option value="35">Adele</option>
+          <option value="36">Bryson Tiller</option>
+          <option value="37">Usher</option>
+          <option value="38">Alicia Keys</option>
+          <option value="39">Mary J. Blige</option>
+          <option value="40">John Legend</option>
+          <option value="41">Aretha Franklin</option>
+          <option value="42">Giveon</option>
+          <option value="43">Stevie Wonder</option>
+          <option value="44">Marvin Gaye</option>
+          <option value="45">Frank Ocean</option>
+          <option value="46">BJ The Chicago Kid</option>
+          <option value="47">Toby Keith'</option>
+          <option value="48">Garth Brooks</option>
+          <option value="49">Luke Bryan</option>
+          <option value="50">Luke Combs</option>
+          <option value="51">Blake Shelton</option>
+          <option value="52">Dolly Parton</option>
+          <option value="53">Tim McGraw</option>
+          <option value="54">Carrie Underwood</option>
+          <option value="55">Jason Aldean</option>
+          <option value="56">Brad Praisley</option>
+          <option value="57">Miles Davis</option>
+          <option value="58">Duke Ellington</option>
+          <option value="59">Louis Armstrong</option>
+          <option value="60">Charlie Parker</option>
+          <option value="61">Frank Sinatra</option>
+          <option value="62">Ellie Fitzgerald</option>
+          <option value="63">Nat King Cole</option>
+          <option value="64">John Coltrane</option>
+          <option value="65">Thelonious Monk</option>
+          <option value="66">Dizzy Gellespie</option>
+          <option value="67">Herbie Hancock</option>
+          <option value="68">Skrillex</option>
+          <option value="69">Chainsmokers</option>
+          <option value="70">Steve Aoki</option>
+          <option value="71">Diplo</option>
+          <option value="72">Avicii</option>
+          <option value="73">Deadmau5</option>
+          <option value="74">Zedd</option>
+          <option value="75">Calvin Harris</option>
+          <option value="76">Flume</option>
+          <option value="77">Alesso</option>
+          <option value="78">Bob Marley</option>
+          <option value="79">Peter Tosh</option>
+          <option value="80">Damian Marley</option>
+          <option value="81">Rebelution</option>
+          <option value="82">Iration</option>
+          <option value="83">Desmond Dekker</option>
+          <option value="84">Jimmy Cliff</option>
+          <option value="85">Fela Kuti</option>
+          <option value="86">Dennis Brown</option>
+          <option value="87">Snoop Lion</option>
+          <option value="88">Metallica</option>
+          <option value="89">Pantera</option>
+          <option value="90">Black Sabbath</option>
+          <option value="91">Iron Maiden</option>
+          <option value="92">Judas Priest</option>
+          <option value="93">Scorpions</option>
+          <option value="94">Slipknot</option>
+          <option value="95">Korn</option>
+          <option value="96">Motley Cru</option>
+          <option value="97">Tool</option>
+          <option value="98">Slayer</option>
+          <option value="99">System of a Down</option>
+          <option value="100">Green Day</option>
+          <option value="101">Rancid</option>
+          <option value="102">Misfits</option>
+          <option value="103">Blink-182</option>
+          <option value="104">Ramones</option>
+          <option value="105">Black Flag</option>
+          <option value="106">Social Distortion</option>
+          <option value="107">The Offspring</option>
+          <option value="108">Rage Against The Machine</option>
+          <option value="109">Iggy Pop</option>
+          <option value="110">My Chemical Romance</option>
+          <option value="111">Red Hot Chili Peppers</option>
+          <option value="112">Pearl Jam</option>
+          <option value="113">The Killers</option>
+          <option value="114">Weezer</option>
+          <option value="115">Coldplay'</option>
+          <option value="116">R.E.M.</option>
+          <option value="117">Artic Monkeys</option>
+          <option value="118">The Smashing Pumpkins</option>
+          <option value="119">The Cure</option>
+          <option value="120">Imagine Dragons</option>
+          <option value="121">Mulan</option>
+          <option value="122">Lion King</option>
+          <option value="123">Cinderella</option>
+          <option value="124">The Little Mermaid</option>
+          <option value="125">The Beauty and The Beast</option>
+          <option value="126">Aladdin</option>
+          <option value="127">Sleeping Beauty</option>
+          <option value="128">Frozen</option>
+          <option value="129">Snow White</option>
+          <option value="130">Goofy Movie</option>         
+        </select>
+    </div> 
+
+    <div class="input-group mb-3">
+      <label class="input-group-text" for="favorite-artist3">Favorite Artist:</label>
+        <select class="form-select" id="favorite-artist3">
+          <option selected>Choose...</option>
+          <option value="1">Taylor Swift</option>
+          <option value="1">Michael Jackson</option>
+          <option value="2">Drake</option>
+          <option value="3">Nirvana</option>
+          <option value="4">The Beatles</option>
+          <option value="5">Queen</option>
+          <option value="6">The Rolling Stones</option>
+          <option value="7">Pink Floyd</option>
+          <option value="8">Led Zeppelin</option>
+          <option value="9">AC/DC</option>
+          <option value="10">Van Halen</option>
+          <option value="11">Foo Fighters</option>
+          <option value="12">The Eagles</option>
+          <option value="13">Lil Wayne</option>
+          <option value="14">Eminem</option>
+          <option value="15">2Pac</option>
+          <option value="16">Snoop Dogg</option>
+          <option value="17">Cardi B</option>
+          <option value="18">Megan Thee Stallion</option>
+          <option value="19">Jay-Z</option>
+          <option value="20">Chance, The Rapper</option>
+          <option value="21">Nas</option>
+          <option value="22">Post Malone</option>
+          <option value="23">Mac Miller</option>
+          <option value="24">Beyonce</option>
+          <option value="25">Lady Gaga</option>
+          <option value="26">Ariana Grande</option>
+          <option value="27">Doja Cat</option>
+          <option value="28">Justin Beiber</option>
+          <option value="29">The Weeknd</option>
+          <option value="30">Rhianna</option>
+          <option value="31">Bruna Mars</option>
+          <option value="32">Billie Eilish</option>
+          <option value="33">Madonna</option>
+          <option value="34">Britney Spears</option>
+          <option value="35">Adele</option>
+          <option value="36">Bryson Tiller</option>
+          <option value="37">Usher</option>
+          <option value="38">Alicia Keys</option>
+          <option value="39">Mary J. Blige</option>
+          <option value="40">John Legend</option>
+          <option value="41">Aretha Franklin</option>
+          <option value="42">Giveon</option>
+          <option value="43">Stevie Wonder</option>
+          <option value="44">Marvin Gaye</option>
+          <option value="45">Frank Ocean</option>
+          <option value="46">BJ The Chicago Kid</option>
+          <option value="47">Toby Keith'</option>
+          <option value="48">Garth Brooks</option>
+          <option value="49">Luke Bryan</option>
+          <option value="50">Luke Combs</option>
+          <option value="51">Blake Shelton</option>
+          <option value="52">Dolly Parton</option>
+          <option value="53">Tim McGraw</option>
+          <option value="54">Carrie Underwood</option>
+          <option value="55">Jason Aldean</option>
+          <option value="56">Brad Praisley</option>
+          <option value="57">Miles Davis</option>
+          <option value="58">Duke Ellington</option>
+          <option value="59">Louis Armstrong</option>
+          <option value="60">Charlie Parker</option>
+          <option value="61">Frank Sinatra</option>
+          <option value="62">Ellie Fitzgerald</option>
+          <option value="63">Nat King Cole</option>
+          <option value="64">John Coltrane</option>
+          <option value="65">Thelonious Monk</option>
+          <option value="66">Dizzy Gellespie</option>
+          <option value="67">Herbie Hancock</option>
+          <option value="68">Skrillex</option>
+          <option value="69">Chainsmokers</option>
+          <option value="70">Steve Aoki</option>
+          <option value="71">Diplo</option>
+          <option value="72">Avicii</option>
+          <option value="73">Deadmau5</option>
+          <option value="74">Zedd</option>
+          <option value="75">Calvin Harris</option>
+          <option value="76">Flume</option>
+          <option value="77">Alesso</option>
+          <option value="78">Bob Marley</option>
+          <option value="79">Peter Tosh</option>
+          <option value="80">Damian Marley</option>
+          <option value="81">Rebelution</option>
+          <option value="82">Iration</option>
+          <option value="83">Desmond Dekker</option>
+          <option value="84">Jimmy Cliff</option>
+          <option value="85">Fela Kuti</option>
+          <option value="86">Dennis Brown</option>
+          <option value="87">Snoop Lion</option>
+          <option value="88">Metallica</option>
+          <option value="89">Pantera</option>
+          <option value="90">Black Sabbath</option>
+          <option value="91">Iron Maiden</option>
+          <option value="92">Judas Priest</option>
+          <option value="93">Scorpions</option>
+          <option value="94">Slipknot</option>
+          <option value="95">Korn</option>
+          <option value="96">Motley Cru</option>
+          <option value="97">Tool</option>
+          <option value="98">Slayer</option>
+          <option value="99">System of a Down</option>
+          <option value="100">Green Day</option>
+          <option value="101">Rancid</option>
+          <option value="102">Misfits</option>
+          <option value="103">Blink-182</option>
+          <option value="104">Ramones</option>
+          <option value="105">Black Flag</option>
+          <option value="106">Social Distortion</option>
+          <option value="107">The Offspring</option>
+          <option value="108">Rage Against The Machine</option>
+          <option value="109">Iggy Pop</option>
+          <option value="110">My Chemical Romance</option>
+          <option value="111">Red Hot Chili Peppers</option>
+          <option value="112">Pearl Jam</option>
+          <option value="113">The Killers</option>
+          <option value="114">Weezer</option>
+          <option value="115">Coldplay'</option>
+          <option value="116">R.E.M.</option>
+          <option value="117">Artic Monkeys</option>
+          <option value="118">The Smashing Pumpkins</option>
+          <option value="119">The Cure</option>
+          <option value="120">Imagine Dragons</option>
+          <option value="121">Mulan</option>
+          <option value="122">Lion King</option>
+          <option value="123">Cinderella</option>
+          <option value="124">The Little Mermaid</option>
+          <option value="125">The Beauty and The Beast</option>
+          <option value="126">Aladdin</option>
+          <option value="127">Sleeping Beauty</option>
+          <option value="128">Frozen</option>
+          <option value="129">Snow White</option>
+          <option value="130">Goofy Movie</option>         
+        </select>
+
+        <div class="input-group mb-3 mt-3 image-upload">
+          <label class="input-group-text" for="image">Upload an Image:</label>
+          <img src="..." class="rounded mx-auto d-block" alt="profile picture">
+          <input type="file" name="fileToUpload" value="">
+        </div>
+    </div> 
+
+<button type="submit" class="btn btn-primary">Create Profile</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
