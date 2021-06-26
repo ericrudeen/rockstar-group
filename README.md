@@ -1,5 +1,7 @@
 # rockstar-group
 
+Heroku Deployment: https://ballad-ucsd.herokuapp.com/
+
 ## User Story
 
 ```md
@@ -69,6 +71,7 @@ Matches Page
 ## Important Links
 
 [Github Project](https://github.com/ericrudeen/rockstar-group)
+[Heroku Deployment] (https://ballad-ucsd.herokuapp.com/)
 
 ## Framework, Technologies, packages
 
