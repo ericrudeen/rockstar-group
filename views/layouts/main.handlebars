@@ -20,13 +20,13 @@
 
 <ul class="nav bg-light justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <a class="nav-link active" aria-current="page" href="/">Home</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Profile</a>
+    <a class="nav-link" href="/profile">Profile</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Matches</a>
+    <a class="nav-link" href="/match">Matches</a>
   </li>
   <!-- <li class="nav-item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Messages</a>
@@ -35,7 +35,7 @@
     <a class="nav-link" href="#">Account Settings</a>
   </li> --}}
   <li class="nav-item">
-    {{#if logged_in}}
+    {{#if loggedIn}}
     <a class="nav-link" href="/" id="logout-link">Logout</a>
     {{else}}
     <a class="nav-link" href="/login">Login</a>
@@ -76,7 +76,15 @@
       </div>
 </div> --}}
 
+<!-- This will render script for logged in users -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>
 

@@ -5,7 +5,8 @@ h1, h2 {
   .form-input {
     display: block;
   }
-  
+
+  .btn,
   .form-input {
     width: 100%;
     padding: 10px;
@@ -25,7 +26,8 @@ h1, h2 {
     font-size: 12px;
     margin: 12px;
   }
-  
+
+  .btn,
   button,
   input {
     width: 98%;
@@ -95,4 +97,8 @@ form textarea {
   font-size: 16px;
   border: 2px solid darkblue;
   border-radius: 5px;
+}
+
+.btn {
+  background-color: lightblue;
 }
