@@ -1,21 +1,28 @@
 <h1 class="text-center">MATCHES PROFILES</h1>
 <div class="row row-cols-1 row-cols-md-2 g-4 mx-auto">
 
+
   <div class="col">
+    {{#each matches as |match|}}
     <div class="card rounded" style="width: 25rem;">
       <img src="https://user-images.githubusercontent.com/79430431/123481096-21a39700-d5b8-11eb-904e-bbbcbcba8ccc.png" class="card-img-top" alt="profile image">
       <div class="card-body">
-        <h4 class="card-title text-center">{{user.name}}</h4>
+        <h4 class="card-title text-center">{{match.likee_user.name}}</h4>
       </div>
-          <div class="list-group">
-            <label class="p-2" for="age">{{user.age}}</label>
-            <label class="p-2" for="age">{{user.gender}}</label>
-            <label class="p-2" for="age">{{user.interested_in}}</label>
-            <label class="p-2" for="age">{{user.location}}</label>
+          <div class="list-group text-center">
+            <label class="p-2" for="age">Age:</label>
+            <p>{{match.likee_user.age}}</p>
+            <label class="p-2" for="gender">Gender:</label>
+            <p>{{match.likee_user.gender}}</p>
+            <label class="p-2" for="interested_in">Interested_in:</label>
+            <p>{{match.likee_user.interested_in}}</p>
+            <label class="p-2" for="location">Location:</label>
+            <p>{{match.likee_user.location}}</p>
           </div>
           <div class="card-links p-3 m-3">
             <button class="btn btn-success mx-3" type="submit">Let's Talk!</button>
           </div>
     </div>
+    {{/each}}
   </div>  
 </div>
