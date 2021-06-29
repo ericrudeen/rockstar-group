@@ -1,26 +1,32 @@
 <!-- Loop over each object in the projects array -->
+
+
 {{#each users as |user| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{user.name}}
-    </h2>
-    <p>
-      {{user.age}}
-    </p>
-    <p>
-      {{user.gender}}
-    </p>
-    <p>
-      {{user.interested_in}}
-    </p>
-    <p>
-      {{user.location}}
-    </p>
-    <p>
-      {{user.age}}
-    </p>
+<div class="card rounded mx-auto d-block" style="width: 25rem;">
+  <img src="https://user-images.githubusercontent.com/79430431/123481096-21a39700-d5b8-11eb-904e-bbbcbcba8ccc.png" class="card-img-top" alt="profile image">
+  <div class="card-body">
+    <h4 class="card-title text-center">{{user.name}}</h4>
+    {{!-- <p class="card-text p-2">Description on user</p> --}}
   </div>
+
+      <div class="list-group text-center">
+        <label class="p-2" for="age">Age:</label>
+        <p>{{user.age}}</p>
+        <label class="p-2" for="gender">Gender:</label>
+        <p>{{user.gender}}</p>
+        <label class="p-2" for="interested-in">Interested in:</label>
+        <p>{{user.interested_in}}</p>
+        <label class="p-2" for="location">Location:</label>
+        <p>{{user.location}}</p>
+        <label class="p-2" for="genres">Favorite Genre:</label>
+        <p>{{user.favorite_genre}}</p>
+
+        <label class="p-2" for="artists">Favorite Artist:</label>
+        <p>{{user.favorite_artist}}</p>
+      </div>
+      <div class="card-links p-3 m-3">
+        <button class="btn btn-success mx-3" type="submit">Let's Make a Ballad!</button>
+        <button class="btn btn-danger" type="remove">Bye Felicia!</button>
+      </div>
 </div>
 {{/each}}

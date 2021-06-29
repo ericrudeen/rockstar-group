@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { User, Match } = require("../models");
-
+const {Op} = require("sequelize")
 // router.get("/", (req, res) => {
 //   res.redirect("/match");
 // });
@@ -30,12 +30,30 @@ const { User, Match } = require("../models");
 //   }
 // });
 
-router.get("/", (req, res) => {
-  res.render("homepage");
+router.get("/", async (req, res) => {
+  try {
+    const userData = await User.findAll({
+      where: {
+        id: {
+          [Op.not]:req.session.userId
+        }
+        
+      }
+    })
+    const users = userData.map((user) => user.get({ plain: true }));
+    res.render("homepage", {
+      loggedIn: req.session.loggedIn,
+      users
+
+    });
+  } catch(err){
+
+  }
+  
 });
 
 router.get("/login", (req, res) => {
-  if (req.session.logged_in) {
+  if (req.session.loggedIn) {
     res.redirect("/");
     return;
   }
@@ -43,7 +61,7 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/signup", (req, res) => {
-  if (req.session.logged_in) {
+  if (req.session.loggedIn) {
     res.redirect("/");
     return;
   }
