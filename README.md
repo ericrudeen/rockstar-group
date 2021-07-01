@@ -11,19 +11,20 @@ SO THAT I build a relationship with a potential match of interest
 ```
 
 ## Project Outline
+This where the steps that were intended to happen in this application. This application is still in progress as not all the functionalities are there. 
 
 ```md
 GIVEN a Dating website
 WHEN I visit the site for the first time
-THEN I am presented with a create an account or login page
+THEN I am presented with a blank page where I can log in 
 WHEN I choose to sign up
-THEN I am prompted to create a username and password
+THEN I am prompted to create a username and password and enter some information
 WHEN I click on the sign-up button
 THEN my user credentials are saved and I am logged into the site
 WHEN I click on the login
 THEN I am taken to the homepage
 WHEN I am signed in to the site
-THEN I see navigation links for the homepage, profile, matches, account settings the option to log out
+THEN I see navigation links for the homepage, profile, matches, the option to log out
 WHEN I click on the homepage option in the navigation
 THEN I can see different profiles of users and I can click Lets Ballad or Bye Felicia
 WHEN I click on Lets Ballad
@@ -44,7 +45,7 @@ THEN I am signed out of the site
 
 ## Usage
 
-For people interested in starting a relationship with another person.
+For people interested in starting a relationship with another person with an interest on music.
 
 ## Tests
 
